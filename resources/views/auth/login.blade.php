@@ -58,15 +58,12 @@
                                     </x-input>
                                 </div>
     
-                                <div class="flex items-center justify-between">
-                                    <label for="remember_me" class="inline-flex items-center">
-                                        <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                                        <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-                                    </label>
+                                <div class="flex items-center justify-end">
+                                 
     
                                     @if (Route::has('password.request'))
                                         <a class="text-sm text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300" href="{{ route('password.request') }}">
-                                            {{ __('Forgot password?') }}
+                                            {{ __('Tengo un codigo para verificar') }}
                                         </a>
                                     @endif
                                 </div>
